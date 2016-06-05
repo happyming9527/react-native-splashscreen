@@ -42,7 +42,7 @@ public class RCTSplashScreen extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void hide() {
+    public void hide(String effect) {
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
@@ -80,7 +80,7 @@ public class RCTSplashScreen extends ReactContextBaseJavaModule {
     }
 
     private int getSplashId() {
-        int drawableId = getActivity().getResources().getIdentifier("splash", "drawable", getActivity().getClass().getPackage().getName());
+        int drawableId = getActivity().getResources().getIdentifier("splash", "mipmap", getActivity().getClass().getPackage().getName());
         if (drawableId == 0) {
             drawableId = getActivity().getResources().getIdentifier("splash", "drawable", getActivity().getPackageName());
         }
@@ -105,8 +105,8 @@ public class RCTSplashScreen extends ReactContextBaseJavaModule {
                 splashImageView.setLayoutParams(layoutParams);
                 splashImageView.setMinimumHeight(display.getHeight());
                 splashImageView.setMinimumWidth(display.getWidth());
-                splashImageView.setBackgroundColor(Color.BLACK);
-                splashImageView.setScaleType(ImageView.ScaleType.FIT_XY);
+                splashImageView.setBackgroundColor(Color.WHITE);
+                splashImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
                 // Create and show the dialog
                 splashDialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);

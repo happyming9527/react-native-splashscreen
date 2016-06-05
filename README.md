@@ -13,8 +13,7 @@ npm install @remobile/react-native-splashscreen --save
 * In your project, Look for Header Search Paths and make sure it contains $(SRCROOT)/../node_modules/@remobile/react-native-splashscreen/ios/RCTSplashScreen
 
 * delete your project's LaunchScreen.xib
-* Dray SplashScreenResource to your project [if you want change image, replace splash.png]
-
+* set LaunchImage
 * In AppDelegate.m
 ```objc
 ...
@@ -51,7 +50,7 @@ dependencies {
     compile project(':react-native-splashscreen')
 }
 ```
-* if you want change image, replace res/drawable/splash.png
+* if you want change image, replace res/mipmap/splash.png
 
 * register module (in MainActivity.java)
 
