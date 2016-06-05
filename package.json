@@ -1,11 +1,11 @@
 {
-    "name": "@remobile/react-native-splashscreen",
-        "version": "1.0.3",
+    "name": "react-native-splashscreen",
+        "version": "1.0.4",
         "description": "A splashscreen for react-native, hide when application loaded",
         "main": "index.js",
         "author": {
-            "name": "YunJiang.Fang",
-            "email": "42550564@qq.com"
+            "name": "happyming9527",
+            "email": "339755551@qq.com"
         },
         "license": "MIT",
         "keywords": [
@@ -21,12 +21,12 @@
             "remobile",
             "mobile"
         ],
-        "homepage": "https://github.com/remobile/react-native-splashscreen",
+        "homepage": "https://github.com/happyming9527/react-native-splashscreen",
         "bugs": {
-            "url": "https://github.com/remobile/react-native-splashscreen/issues"
+            "url": "https://github.com/happyming9527/react-native-splashscreen/issues"
         },
         "repository": {
             "type": "git",
-            "url": "git://github.com/remobile/react-native-splashscreen.git"
+            "url": "git://github.com/happyming9527/react-native-splashscreen.git"
         }
 }
